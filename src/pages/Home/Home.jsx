@@ -6,6 +6,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import { FreeMode, Pagination } from "swiper";
+import Vegetables from '../../components/Veggies/Vegetables';
 
 function Home({vitamins}) {
 
@@ -25,12 +26,8 @@ function Home({vitamins}) {
                 {vitamins.map((recipe)=> {
                     return (
                         <SwiperSlide key={recipe.id}>
-                            <div className={classes.card}>
-                                <img src={recipe.image} alt={recipe.cardTitle} className={classes.cardImg}/>
-                                <p className={classes.cardTitle}>{recipe.title}</p>
-                            </div>
+                            <Vegetables recipe={recipe}/>
                         </SwiperSlide>
-
                     )
                 })}
             </Swiper>
