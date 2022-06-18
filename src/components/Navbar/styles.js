@@ -4,13 +4,17 @@ import {makeStyles} from '@material-ui/core'
 export default makeStyles (()=> ({
     navbar: {
         width: '100%',
-        height: '2.5rem'
+        height: '3rem',
     },
     container:{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: '0 auto'
+        margin: '0 auto',
+        maxWidth: '1024px'
+    },
+    nav:{
+        width: '100%',
     },
     navLogo:{
         display: 'flex',
@@ -18,6 +22,11 @@ export default makeStyles (()=> ({
         alignItems: 'center',
         fontFamily: 'Poppins',
         fontSize:'2rem',
-        color: '#2c3539'
+        color: '#2c3539',
+        gap: '1rem'
+    },
+    navTitle: {
+        fontWeight: '500',
+        fontFamily: 'Satisfy'
     },
 }))

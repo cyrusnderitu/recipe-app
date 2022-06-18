@@ -18,6 +18,7 @@ export default makeStyles (()=> ({
         width: '60%',
         display: 'flex',
         justifyContent: 'flex-start',
+        alignItems: 'center',
         backgroundColor: '#2c3539',
         padding: '10px 15px',
         color: '#edeae0',
@@ -27,7 +28,6 @@ export default makeStyles (()=> ({
     formInput:{
         fontFamily: 'Poppins',
         fontSize: '1rem',
-        textIndent: '2rem',
         background: 'none',
         outline: 'none',
         border: 'none',

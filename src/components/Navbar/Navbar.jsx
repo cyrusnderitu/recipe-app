@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUtensils } from '@fortawesome/free-solid-svg-icons'
 import useStyles from './styles'
 
 function Navbar() {
@@ -9,7 +11,7 @@ function Navbar() {
         <div className={classes.container}>
             <nav className={classes.nav}>
                 <div className={classes.navLogo}>
-                    <i className="fa-solid fa-fork-knife"></i>
+                    <FontAwesomeIcon icon={faUtensils} />
                     <span className={classes.navTitle}>Delicious Meals</span>
                 </div>
             </nav>

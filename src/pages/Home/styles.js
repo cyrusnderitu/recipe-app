@@ -11,6 +11,8 @@ export default makeStyles (()=> ({
         padding: '10px',
     },
     title: {
+        fontWeight: '400',
+        fontSize: '1.25rem',
         margin: '2.5rem 0 .75rem'
     },
 }))

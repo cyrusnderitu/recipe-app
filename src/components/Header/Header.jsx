@@ -1,6 +1,6 @@
 import React from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faSalad } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBowlFood } from '@fortawesome/free-solid-svg-icons'
 import useStyles from './styles'
 
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
     <div className={classes.header}>
         <div className={classes.formContainer}>
             <form className={classes.form}>
-                {/* <FontAwesomeIcon icon={faSalad} size="sm"/> */}
+                <FontAwesomeIcon icon={faBowlFood}/>
                 <input 
                     type="text" 
                     name="recipe" 

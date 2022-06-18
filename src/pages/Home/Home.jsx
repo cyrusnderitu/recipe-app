@@ -16,26 +16,6 @@ function Home({vitamins, popular}) {
     <div className={classes.container}>
         <div className={classes.home}>
             <div className={classes.homeCont}>
-                <h2 className={classes.title}>Our Veggies Section</h2>
-                
-                <Swiper
-                    slidesPerView={4}
-                    spaceBetween={20}
-                    freeMode={true}
-                    pagination={false}
-                    modules={[FreeMode, Pagination]}
-                    className="mySwiper"
-                >
-                {vitamins.map((recipe)=> {
-                    return (
-                        <SwiperSlide key={recipe.id}>
-                            <Vegetables recipe={recipe}/>
-                        </SwiperSlide>
-                    )
-                })}
-                </Swiper>
-            </div>
-            <div className={classes.homeCont}>
                 <h2 className={classes.title}>Popular Palette</h2>
                 
                 <Swiper
@@ -55,7 +35,26 @@ function Home({vitamins, popular}) {
                 })}
                 </Swiper>
             </div>
-
+            <div className={classes.homeCont}>
+                <h2 className={classes.title}>Weekly's Top Meals </h2>
+                
+                <Swiper
+                    slidesPerView={4}
+                    spaceBetween={20}
+                    freeMode={true}
+                    pagination={false}
+                    modules={[FreeMode, Pagination]}
+                    className="mySwiper"
+                >
+                {vitamins.map((recipe)=> {
+                    return (
+                        <SwiperSlide key={recipe.id}>
+                            <Vegetables recipe={recipe}/>
+                        </SwiperSlide>
+                    )
+                })}
+                </Swiper>
+            </div>
       </div>
     </div>
   )
