@@ -16,7 +16,7 @@ function Home({vitamins, popular}) {
     <div className={classes.container}>
         <div className={classes.home}>
             <div className={classes.homeCont}>
-                <h2 className={classes.title}>Popular Palette</h2>
+                <h2 className={classes.title}>Popular Meals</h2>
                 
                 <Swiper
                     slidesPerView={2}

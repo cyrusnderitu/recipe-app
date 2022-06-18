@@ -14,7 +14,7 @@ function Header() {
                 <input 
                     type="text" 
                     name="recipe" 
-                    placeholder='Enter a Meals Name'
+                    placeholder='Cuisine Name'
                     className={classes.formInput}
                 />
             </form>
