@@ -5,12 +5,12 @@ export default makeStyles (()=> ({
     container:{
         width: '100%',
         maxWidth: '1028px',
-        padding: '1.5rem 0 3rem'
+        padding: '1.5rem 0 3rem',
     },
     home:{
         padding: '10px',
     },
     title: {
-        marginBottom: '2rem'
+        margin: '2.5rem 0 .75rem'
     },
 }))

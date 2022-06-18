@@ -8,21 +8,36 @@ import { useEffect, useState } from 'react';
 function App() {
 
   const [vitamins, setVitamins] = useState([])
+  const [popular, setPopular] = useState([])
 
   useEffect(()=>{
-    getRecipe()
-    
+    getVeggies()
+    getPopular()
   }, [])
-  const getRecipe = async ()=> {
 
-    const checkStore = localStorage.getItem('veggie')
-    if(checkStore){
-      setVitamins(JSON.parse(checkStore))
+  const getVeggies = async ()=> {
+
+    const vegStore = localStorage.getItem('veggie')
+    if(vegStore){
+      setVitamins(JSON.parse(vegStore))
     }else{
-      const res = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=7`)
+      const res = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12`)
       const data = await res.json()
       localStorage.setItem('veggie', JSON.stringify(data.recipes))
       setVitamins(data.recipes)
+    }
+
+  }
+  const getPopular = async ()=> {
+
+    const popStore = localStorage.getItem('popular')
+    if(popStore){
+      setPopular(JSON.parse(popStore))
+    }else{
+      const res = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`)
+      const data = await res.json()
+      localStorage.setItem('popular', JSON.stringify(data.recipes))
+      setPopular(data.recipes)
     }
 
   }
@@ -30,7 +45,7 @@ function App() {
     <div className="App">
         <Navbar />
         <Header />
-        <Home vitamins={vitamins}/>
+        <Home vitamins={vitamins} popular={popular}/>
     </div>
   );
 }
