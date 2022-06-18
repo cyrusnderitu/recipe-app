@@ -10,8 +10,11 @@ export default makeStyles (()=> ({
     },
     formContainer: {
         display: 'flex',
-        width: '100%',
+        flexDirection: 'column',
         justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+
         margin: '20px 0',
     },
     form: {
@@ -34,5 +37,22 @@ export default makeStyles (()=> ({
         color: '#EDEAE0',
         paddingRight: '15px'
         
-    }
+    },
+    // MENU FILTERS
+    lists:{
+        display: 'flex',
+        marginTop: '2rem',
+        columnGap: '2rem',
+        marginBottom: '-2rem'
+    },
+    meals: {
+        display: 'flex',
+        alignItems: 'center',
+        columnGap: '.5rem'
+    },
+    mealsTitle: {
+        fontSize: '14px',
+        fontWeight: '400'
+    },
+
 }))
