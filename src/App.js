@@ -1,7 +1,7 @@
 import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
-import Cuisine from './pages/Cuisines.jsx/Cuisine';
+import Cuisine from './pages/Cuisine/Cuisine';
 
 import './App.css';
 import { useEffect, useState } from 'react';
@@ -45,9 +45,9 @@ function App() {
   }
   return (
     <div className="App">
-        <Navbar />
-        <Header />
         <BrowserRouter >
+          <Navbar />
+          <Header />
           <Routes >
             <Route path='/' element={<Home vitamins={vitamins} popular={popular}/>}/>
             <Route path='/cuisine' element={<Cuisine />}/>

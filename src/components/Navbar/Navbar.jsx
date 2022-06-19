@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom'
 import useStyles from './styles'
 
 function Navbar() {
@@ -10,10 +11,10 @@ function Navbar() {
     <div className={classes.navbar}>
         <div className={classes.container}>
             <nav className={classes.nav}>
-                <div className={classes.navLogo}>
+                <NavLink to={'/'} className={classes.navLogo}>
                     <FontAwesomeIcon icon={faUtensils} />
                     <span className={classes.navTitle}>Delicious Meals</span>
-                </div>
+                </NavLink>
             </nav>
         </div>
       

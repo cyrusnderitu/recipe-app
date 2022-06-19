@@ -26,7 +26,7 @@ export default makeStyles (()=> ({
         gap: '1rem'
     },
     navTitle: {
-        fontWeight: '500',
-        fontFamily: 'Satisfy'
+        fontFamily: 'Satisfy',
+        fontWeight: 'bolder'
     },
 }))

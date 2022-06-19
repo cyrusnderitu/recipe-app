@@ -48,7 +48,11 @@ export default makeStyles (()=> ({
     meals: {
         display: 'flex',
         alignItems: 'center',
-        columnGap: '.5rem'
+        columnGap: '.5rem',
+        cursor: 'pointer',
+        padding: '.75rem .968rem',
+        backgroundColor: 'burlywood',
+        borderRadius: '.75rem',
     },
     mealsTitle: {
         fontSize: '14px',
