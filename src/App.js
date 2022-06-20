@@ -2,6 +2,7 @@ import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Cuisine from './pages/Cuisine/Cuisine';
+import Search from './pages/Search/Search';
 
 import './App.css';
 import { useEffect, useState } from 'react';
@@ -53,6 +54,7 @@ function App() {
           <Routes >
             <Route path='/' element={<Home vitamins={vitamins} popular={popular}/>}/>
             <Route path='/cuisine/:type' element={<Cuisine />}/>
+            <Route path='/meal/:search' element={<Search />}/>
           </Routes>
         </BrowserRouter>
         
