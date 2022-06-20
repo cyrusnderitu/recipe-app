@@ -18,18 +18,20 @@ function Search() {
       const data = await res.json()
       setSearch(data.results)
   }
+
+  const searchElement = search.map((meal)=>{
+                            return(
+                            <div className={classes.card} key={meal.id}>
+                                <img src={meal.image} alt={meal.title} className={classes.cardImage} />
+                                <h4 className={classes.cardTitle}>{meal.title}</h4>
+                            </div>
+                            )
+                        })
   return (
     <div className={classes.container}>
-    <div className={classes.grid}>
-      {search.map((meal)=>{
-        return(
-          <div className={classes.card} key={meal.id}>
-            <img src={meal.image} alt={meal.title} className={classes.cardImage} />
-            <h4 className={classes.cardTitle}>{meal.title}</h4>
-          </div>
-        )
-      })}
-      </div>
+        <div className={classes.grid}>
+            {searchElement}
+        </div>
   </div>  
   )
 }
