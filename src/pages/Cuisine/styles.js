@@ -7,12 +7,23 @@ export default makeStyles (()=> ({
         maxWidth: '1028px',
         padding: '1.5rem 0 3rem',
     },
-    cuisine:{
-        padding: '10px',
+    grid: {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
+        gridGap: '3rem'
     },
-    title: {
+    card: {
+        borderRadius: '.75rem',
+        overflow: 'hidden',
+        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+        paddingBottom: '3rem'
+    },
+    cardImage:{
+        width: '100%'
+    },
+    cardTitle: {
         fontWeight: '400',
-        fontSize: '1.25rem',
-        margin: '2.5rem 0 .75rem'
+        fontSize: '14px',
+        textAlign: 'center'
     },
 }))

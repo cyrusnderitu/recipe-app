@@ -9,6 +9,7 @@ import {Route, Routes, BrowserRouter} from 'react-router-dom'
 
 function App() {
 
+
   const [vitamins, setVitamins] = useState([])
   const [popular, setPopular] = useState([])
 
@@ -43,6 +44,7 @@ function App() {
     }
 
   }
+
   return (
     <div className="App">
         <BrowserRouter >
@@ -50,7 +52,7 @@ function App() {
           <Header />
           <Routes >
             <Route path='/' element={<Home vitamins={vitamins} popular={popular}/>}/>
-            <Route path='/cuisine' element={<Cuisine />}/>
+            <Route path='/cuisine/:type' element={<Cuisine />}/>
           </Routes>
         </BrowserRouter>
         

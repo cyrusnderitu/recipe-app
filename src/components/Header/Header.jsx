@@ -22,15 +22,15 @@ function Header() {
                 />
             </form>
             <div className={classes.lists}>
-              <div className={classes.meals} onClick={()=>{navigate('/cuisine/italian')}}>
+              <div className={classes.meals} onClick={()=>{navigate('/cuisine/Italian')}}>
                   <FontAwesomeIcon icon={faPizzaSlice} size='lg'/>
                   <h2 className={classes.mealsTitle}>Italian</h2>
               </div>
-              <div className={classes.meals} onClick={()=>{navigate('/cuisine/american')}}>
+              <div className={classes.meals} onClick={()=>{navigate('/cuisine/American')}}>
                   <FontAwesomeIcon icon={faHamburger} size='lg'/>
                   <h2 className={classes.mealsTitle}>American</h2>
               </div>
-              <div className={classes.meals} onClick={()=>{navigate('/cuisine/thai')}}>
+              <div className={classes.meals} onClick={()=>{navigate('/cuisine/Thai')}}>
                   <FontAwesomeIcon icon={faPizzaSlice} size='lg'/>
                   <h2 className={classes.mealsTitle}>Thai</h2>
               </div>
