@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import useStyles from './styles'
+import {Link} from 'react-router-dom'
 
 function Search() {
 
@@ -22,8 +23,10 @@ function Search() {
   const searchElement = search.map((meal)=>{
                             return(
                             <div className={classes.card} key={meal.id}>
-                                <img src={meal.image} alt={meal.title} className={classes.cardImage} />
-                                <h4 className={classes.cardTitle}>{meal.title}</h4>
+                              <Link to={'./recipe/' + meal.id}>
+                                  <img src={meal.image} alt={meal.title} className={classes.cardImage} />
+                                  <h4 className={classes.cardTitle}>{meal.title}</h4>
+                              </Link>
                             </div>
                             )
                         })

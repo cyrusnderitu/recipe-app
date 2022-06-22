@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Cuisine from './pages/Cuisine/Cuisine';
 import Search from './pages/Search/Search';
+import Recipe from './pages/Clicked/Recipe';
 
 import './App.css';
 import { useEffect, useState } from 'react';
@@ -55,6 +56,7 @@ function App() {
             <Route path='/' element={<Home vitamins={vitamins} popular={popular}/>}/>
             <Route path='/cuisine/:type' element={<Cuisine />}/>
             <Route path='/meal/:search' element={<Search />}/>
+            <Route path='/recipe/:name' element={<Recipe />}/>
           </Routes>
         </BrowserRouter>
         
