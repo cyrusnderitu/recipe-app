@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For the purpose of review: (https://cyrusnderitu.github.io/recipe-app).
 
 ## Available Scripts
 
