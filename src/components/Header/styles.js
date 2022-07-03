@@ -51,12 +51,19 @@ export default makeStyles (()=> ({
         columnGap: '.5rem',
         cursor: 'pointer',
         padding: '.75rem .968rem',
-        backgroundColor: 'burlywood',
         borderRadius: '.75rem',
     },
     mealsTitle: {
         fontSize: '14px',
         fontWeight: '400'
     },
+    active: {
+        backgroundColor: 'lightgray',
+        color: 'white'
+    },
+    nonActive: {
+        backgroundColor: 'burlywood',
+        color: 'black'
+    }
 
 }))

@@ -7,7 +7,7 @@ function Vegetables({recipe}) {
   const classes = useStyles()
   return (
     <div className={classes.card}>
-      <Link to={'./recipe/' + recipe.id}>
+      <Link to={'/recipe/' + recipe.id}>
           <img src={recipe.image} alt={recipe.cardTitle} className={classes.cardImg}/>
           <p className={classes.cardTitle}>{recipe.title}</p>
       </Link>

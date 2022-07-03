@@ -37,8 +37,10 @@ function Recipe() {
           </div>
           {activeButton === 'meal' && (
                       <ul className={classes.displayInfo}>
-                      <li>Dish Type: <span className={classes.subSection}>{recipeDetails.dishTypes}</span> </li>
-                      <li>Cuisine: <span  className={classes.subSection}>{recipeDetails.cuisines ? recipeDetails.cuisines : 'None'}</span> </li>
+                      <li>Dish Type: <span className={classes.subSection}> {recipeDetails.dishTypes}</span> </li>
+                      <li>Cuisine: <span  className={classes.subSection}> {recipeDetails.cuisines ? recipeDetails.cuisines : 'None'}</span> </li>
+                      <li>Diets: <span  className={classes.subSection}> {recipeDetails.diets ? recipeDetails.diets : 'None'}</span> </li>
+                      <li>Price per serving: <span  className={classes.subSection}>$ {recipeDetails.pricePerServing}</span> </li>
                     </ul>
           )}
           {activeButton === 'ingredient' && (

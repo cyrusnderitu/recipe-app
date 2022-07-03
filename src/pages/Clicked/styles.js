@@ -7,12 +7,13 @@ export default makeStyles(()=> ({
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      marginBottom: '2rem',
    },
    display: {
       display: 'grid',
       gridTemplateColumns: 'repeat(2, 1fr)',
-      marginTop: '3rem',
+      margin: '3rem 0 .5rem',
       width: '100%',
       // gap: '10rem'
    },

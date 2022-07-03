@@ -7,6 +7,7 @@ import useStyles from './styles'
 function Header() {
   
   const [input, setInput]= useState('')
+  const [activeTab, setActiveTab] = useState('None')
   const classes = useStyles()
   const navigate = useNavigate()
 
@@ -31,19 +32,19 @@ function Header() {
                 />
             </form>
             <div className={classes.lists}>
-              <div className={classes.meals} onClick={()=>{navigate('/cuisine/Italian')}}>
+              <div className={activeTab === 'italian'? `${classes.active} ${classes.meals}`: `${classes.nonActive} ${classes.meals}`} onClick={()=>{navigate('/cuisine/Italian'); setActiveTab('italian')}}>
                   <FontAwesomeIcon icon={faPizzaSlice} size='lg'/>
                   <h2 className={classes.mealsTitle}>Italian</h2>
               </div>
-              <div className={classes.meals} onClick={()=>{navigate('/cuisine/American')}}>
+              <div className={activeTab === 'american'? `${classes.active} ${classes.meals}`: `${classes.nonActive} ${classes.meals}`} onClick={()=>{navigate('/cuisine/American'); setActiveTab('american')}}>
                   <FontAwesomeIcon icon={faHamburger} size='lg'/>
                   <h2 className={classes.mealsTitle}>American</h2>
               </div>
-              <div className={classes.meals} onClick={()=>{navigate('/cuisine/Thai')}}>
+              <div className={activeTab === 'thai'? `${classes.active} ${classes.meals}`: `${classes.nonActive} ${classes.meals}`} onClick={()=>{navigate('/cuisine/Thai'); setActiveTab('thai')}}>
                   <FontAwesomeIcon icon={faPizzaSlice} size='lg'/>
                   <h2 className={classes.mealsTitle}>Thai</h2>
               </div>
-              <div className={classes.meals} onClick={()=>{navigate('/cuisine/Chinese')}}>
+              <div className={activeTab === 'chinese'? `${classes.active} ${classes.meals}`: `${classes.nonActive} ${classes.meals}`} onClick={()=>{navigate('/cuisine/Chinese'); setActiveTab('chinese')}}>
                   <FontAwesomeIcon icon={faBowlRice} size='lg'/>
                   <h2 className={classes.mealsTitle}>Chinese</h2>
               </div>

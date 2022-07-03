@@ -21,15 +21,15 @@ function Search() {
   }
 
   const searchElement = search.map((meal)=>{
-                            return(
-                            <div className={classes.card} key={meal.id}>
-                              <Link to={'./recipe/' + meal.id}>
-                                  <img src={meal.image} alt={meal.title} className={classes.cardImage} />
-                                  <h4 className={classes.cardTitle}>{meal.title}</h4>
-                              </Link>
-                            </div>
-                            )
-                        })
+                      return(
+                      <div className={classes.card} key={meal.id}>
+                        <Link to={'/recipe/' + meal.id}>
+                            <img src={meal.image} alt={meal.title} className={classes.cardImage} />
+                            <h4 className={classes.cardTitle}>{meal.title}</h4>
+                        </Link>
+                      </div>
+                      )
+                  })
   return (
     <div className={classes.container}>
         <div className={classes.grid}>
