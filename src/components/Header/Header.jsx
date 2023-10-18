@@ -18,7 +18,6 @@ function Header() {
   const onSubmit = (e) => {
     e.preventDefault();
     navigate("/meal/" + input);
-    console.log(input);
     setInput("");
   };
 
