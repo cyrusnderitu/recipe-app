@@ -1,7 +1,8 @@
 ## Recipe Application
-This is an aplication built to allow user or client to search for a meal and the result is the ingredients used aswell as as the method of preparation
+This is an application built to allow user or client to search for a meal and the result is the ingredients used aswell as as the method of preparation
 
 ## Video 
+[recipe-app_5Xedri6V.webm](https://github.com/cyrusnderitu/recipe-app/assets/65945935/db9214b2-5fa3-4014-857c-c2b09ac02fa9)
 
 
 ### Built With
